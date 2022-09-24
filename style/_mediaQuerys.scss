@@ -1,0 +1,39 @@
+  @media(min-width:780px){
+
+    .titulo{
+      transform: translateY(450%);
+    }
+    .galeria_carreras{
+      width: 600px;
+    }
+
+    }
+
+
+    @media(min-width:1024px){
+    .galeria_carreras{
+      display: grid;
+      gap: 8vw;
+      grid-template-areas: 
+      "medicina kinesiologia odontologia";
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 4vw;
+    }
+    .carousel-contenedor{
+      margin: 120px;
+            .carousel-inner{
+                width: 55vw;
+            }
+      }
+      .experienciaDeAlumnos{
+        box-sizing: border-box;
+        margin-top: 20px;
+        display: grid;
+        gap: 2px;
+        grid-template-areas: 
+        "alumno1 alumno2";
+        grid-template-columns: 1fr 1fr;
+      }
+  
+
+  }

@@ -1,0 +1,14 @@
+@keyframes cambiarColor {
+    0%{
+      background-color: inherit;
+    }
+    50%{
+      background-color: lightgray;
+      border-bottom: solid black 2px;
+    }
+    100%{
+      background-color: grey;
+      border-bottom: solid black 2px;
+    }
+  }
+  

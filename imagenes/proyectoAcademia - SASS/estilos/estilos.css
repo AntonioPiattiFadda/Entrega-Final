@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.nav {
+  display: flex;
+  justify-content: end;
+}
+.nav-link{
+  margin:0 2vw; 
+}
+
+.icono{
+  width: 100px;
+}
+
+.carousel-inner{
+  width: 50vw;
+  justify-content: center;
+}
+
+.titulo{
+  text-align: center;
+  margin: 50px;
+}
+
+.subtitulo{
+  text-align: center;
+  margin: 50px;
+}
+
+p{
+  margin: 10px 15vw;
+  text-align: center;
+}
+
+
+
+.carousel-contenedor{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+footer{
+  background-color: lightgrey;
+}
+
+footer{
+  margin: 50px 15px 15px 15px;
+}
+
+.footer{
+  padding: 40px 0;
+  text-align: center;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin: 50px 15vw;
+}
+
+.form-control{
+  margin: 20px 25px 20px 20px;
+  align-items: center;
+}

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@-webkit-keyframes cambiarColor {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: lightgray;
+    border-bottom: solid black 2px;
+  }
+  100% {
+    background-color: grey;
+    border-bottom: solid black 2px;
+  }
+}
+@keyframes cambiarColor {
+  0% {
+    background-color: inherit;
+  }
+  50% {
+    background-color: lightgray;
+    border-bottom: solid black 2px;
+  }
+  100% {
+    background-color: grey;
+    border-bottom: solid black 2px;
+  }
+}
+nav .nav {
+  display: flex;
+  justify-content: end;
+}
+nav .nav .nav-link {
+  margin: 0 2vw;
+}
+nav .nav .nav-link:hover {
+  -webkit-animation-name: cambiarColor;
+          animation-name: cambiarColor;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+nav .icono {
+  width: 100px;
+}
+
+.banner {
+  height: 80vh;
+  background-image: url(../imagenes/bannerDeFondo.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.banner .titulo {
+  text-align: center;
+  color: rgb(12, 46, 12);
+  font-family: sans-serif;
+  font-size: 2.5em;
+  transform: translateY(200%);
+}
+.banner .titulo:hover {
+  color: black;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 50px;
+}
+
+p {
+  margin: 10px 15vw;
+  text-align: center;
+}
+
+.carousel-contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.carousel-contenedor .carousel-inner {
+  width: 75vw;
+  justify-content: center;
+}
+
+footer {
+  background-color: lightgrey;
+  margin: 50px 15px 15px 15px;
+}
+footer .footer {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 15vw;
+}
+.form-container .form-control {
+  margin: 20px 25px 20px 20px;
+  align-items: center;
+}
+.form-container .submit {
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.form-container .submit:hover {
+  background-color: lightgrey;
+}
+
+.materias {
+  width: 200px;
+  height: 200px;
+  margin: 30px 0;
+}
+
+.galeria-carreras {
+  display: block;
+}
+.galeria-carreras .galeria-carreras_todas {
+  position: relative;
+  border-radius: 10px;
+  margin: 65px;
+  padding: 10px 0;
+  background-color: whitesmoke;
+  box-shadow: 0 14px 28px lightgray;
+  text-align: center;
+}
+.galeria-carreras .boton_medicina {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: violet;
+}
+.galeria-carreras .boton_kinesiologia {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: coral;
+}
+.galeria-carreras .boton_odontologia {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.galeria-carreras .galeria-carreras_1 {
+  grid-area: medicina;
+  color: violet;
+}
+.galeria-carreras .galeria-carreras_2 {
+  grid-area: kinesiologia;
+  color: coral;
+}
+.galeria-carreras .galeria-carreras_3 {
+  grid-area: odontologia;
+  color: yellow;
+}
+.galeria-carreras img {
+  border-radius: 5px;
+}
+
+.experienciaDeAlumnos {
+  display: block;
+}
+.experienciaDeAlumnos .experienciaDeAlumnos1 {
+  grid-area: alumno1;
+}
+.experienciaDeAlumnos .experienciaDeAlumnos2 {
+  grid-area: alumno2;
+}
+.experienciaDeAlumnos .experienciaDeAlumnos__todas {
+  position: relative;
+  border-radius: 10px;
+  margin: 65px;
+  padding: 0;
+  width: 80%;
+  background-color: whitesmoke;
+  box-shadow: 0 14px 28px lightgray;
+  text-align: center;
+}
+.experienciaDeAlumnos .experienciaDeAlumnos__todas .experienciaDeAlumnos__texto {
+  padding: 20px;
+}
+.experienciaDeAlumnos img {
+  border-radius: 5px;
+  width: 260px;
+}
+
+.profersores__todas {
+  position: relative;
+  border-radius: 10px;
+  margin: 65px;
+  padding: 10px 0;
+  background-color: whitesmoke;
+  box-shadow: 0 14px 28px lightgray;
+}
+.profersores__todas:hover img {
+  opacity: 0.3;
+}
+.profersores__todas .profesores__nombreDelProfe {
+  transition: 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.profersores__todas:hover .profesores__nombreDelProfe {
+  opacity: 1;
+}
+
+.profersores__todas div img {
+  opacity: 1;
+  display: block;
+  transition: 5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  transform: translate(15%);
+  width: 80%;
+}
+
+.profersores__1 {
+  grid-area: profe1;
+}
+
+.profersores__2 {
+  grid-area: profe2;
+}
+
+.profersores__3 {
+  grid-area: profe3;
+}
+
+.profersores__4 {
+  grid-area: profe4;
+}
+
+@media (min-width: 780px) {
+  .titulo {
+    transform: translateY(450%);
+  }
+  .galeria_carreras {
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .galeria_carreras {
+    display: grid;
+    gap: 8vw;
+    grid-template-areas: "medicina kinesiologia odontologia";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4vw;
+  }
+  .carousel-contenedor {
+    margin: 120px;
+  }
+  .carousel-contenedor .carousel-inner {
+    width: 55vw;
+  }
+  .experienciaDeAlumnos {
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: grid;
+    gap: 2px;
+    grid-template-areas: "alumno1 alumno2";
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
